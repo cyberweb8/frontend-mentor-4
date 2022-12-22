@@ -117,6 +117,12 @@ body {
 
 .payment__plan-link {
   color: var(--clr-blue-900);
+  transition: 0.3s;
+}
+
+.payment__plan-link:hover {
+  text-decoration: none;
+  color: var(--clr-blue-500);
 }
 
 .payment__buttons {
@@ -135,6 +141,12 @@ body {
   font-weight: var(--fw-x-bold);
   cursor: pointer;
   box-shadow: 0 20px 10px var(--clr-blue-100);
+
+  transition: 0.3s;
+}
+
+.payment__buttons-submit:hover {
+  background-color: var(--clr-blue-500);
 }
 
 .payment__buttons-cancel {
