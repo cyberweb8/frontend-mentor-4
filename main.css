@@ -2,7 +2,7 @@
 
 :root {
   --clr-blue-100: hsl(225, 100%, 98%);
-  --clr-bleu-300: hsl(225, 100%, 94%);
+  --clr-blue-300: hsl(225, 100%, 94%);
   --clr-blue-500: hsl(224, 23%, 55%);
   --clr-blue-700: hsl(245, 75%, 52%);
   --clr-blue-900: hsl(223, 47%, 23%);
@@ -26,10 +26,10 @@
   margin: 0;
 }
 
-html,
+/* html,
 body {
   height: 100%;
-}
+} */
 
 body {
   line-height: 1.5;
@@ -63,7 +63,7 @@ h6 {
 }
 
 body {
-  background-color: var(--clr-bleu-300);
+  background-color: var(--clr-blue-300);
   color: var(--clr-blue-500);
   font-size: var(--fs-base);
   font-weight: var(--fw-medium);
@@ -73,4 +73,75 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.payment {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  border-radius: 1rem;
+  overflow: hidden;
+  max-width: 375px;
+}
+
+.payment__summary {
+  padding: 1rem;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.payment__title {
+  color: var(--clr-blue-900);
+  font-size: 1.8rem;
+  font-weight: var(--fw-x-bold);
+}
+
+.payment__plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--clr-blue-100);
+  border-radius: 1rem;
+}
+
+.payment__plan-title {
+  color: var(--clr-blue-900);
+}
+
+.payment__plan-link {
+  color: var(--clr-blue-900);
+}
+
+.payment__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.payment__buttons-submit {
+  padding: 0.8rem 1.2rem;
+  background-color: var(--clr-blue-700);
+  border: 0;
+  border-radius: 0.5rem;
+  color: var(--clr-blue-100);
+  font-size: 1.1rem;
+  font-weight: var(--fw-x-bold);
+  cursor: pointer;
+  box-shadow: 0 20px 10px var(--clr-blue-100);
+}
+
+.payment__buttons-cancel {
+  padding: 0.8rem 1.2rem;
+  background-color: transparent;
+  color: var(--clr-blue-500);
+  border: 0;
+  font-size: 1.1rem;
+  font-weight: var(--fw-x-bold);
+  cursor: pointer;
 }
