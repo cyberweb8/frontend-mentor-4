@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --clr-blue-100: hsl(225, 100%, 98%);
+  --clr-bleu-300: hsl(225, 100%, 94%);
+  --clr-blue-500: hsl(224, 23%, 55%);
+  --clr-blue-700: hsl(245, 75%, 52%);
+  --clr-blue-900: hsl(223, 47%, 23%);
+
+  --fs-base: 1rem;
+
+  --ff-main: "Red Hat Display", sans-serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --fw-x-bold: 900;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: var(--clr-bleu-300);
+  color: var(--clr-blue-500);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-medium);
+  padding: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
